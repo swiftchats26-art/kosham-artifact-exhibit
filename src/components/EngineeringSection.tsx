@@ -2,19 +2,19 @@ const EngineeringSection = () => {
   const features = [
     {
       title: "Authentic Paithani Provenance",
-      description: "Sourced directly from master weavers in Maharashtra. Each textile carries generations of craft lineage."
+      description: "Sourced directly from master weavers in Maharashtra."
     },
     {
       title: "Automotive-Grade Suede Base",
-      description: "Premium ≥300 GSM suede foundation. Engineered for daily resilience without compromise."
+      description: "Premium ≥300 GSM suede foundation."
     },
     {
-      title: "3M VHB Precision Adhesion",
-      description: "Industrial-grade bonding system. Zero lift, zero degradation, absolute permanence."
+      title: "Industrial Bonding Integrity",
+      description: "Zero lift, zero degradation, absolute permanence."
     },
     {
       title: "Hydrophobic Nano-Coating",
-      description: "Advanced molecular barrier protection. Heritage preserved against the elements."
+      description: "Advanced molecular barrier protection."
     }
   ];
 
@@ -28,8 +28,8 @@ const EngineeringSection = () => {
             </h2>
             <div className="h-px w-24 bg-luxury-burgundy mb-8" />
             <p className="text-lg text-muted-foreground font-light leading-relaxed">
-              The ₹8,999 is not a price. It is recognition of what converges here: 
-              heritage textile art, materials science, and uncompromising craft standards.
+              This is not just an accessory. It is a recognition of the material science, 
+              the uncompromising craft standards, and the heritage textile art that converge here.
             </p>
           </div>
 

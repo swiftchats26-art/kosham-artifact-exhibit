@@ -14,7 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      kosham_waitlist_leads: {
+        Row: {
+          city: string
+          email: string
+          full_name: string
+          lead_id: string
+          phone_number: string
+          pin_code: string
+          registration_timestamp: string
+        }
+        Insert: {
+          city: string
+          email: string
+          full_name: string
+          lead_id?: string
+          phone_number: string
+          pin_code: string
+          registration_timestamp?: string
+        }
+        Update: {
+          city?: string
+          email?: string
+          full_name?: string
+          lead_id?: string
+          phone_number?: string
+          pin_code?: string
+          registration_timestamp?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
