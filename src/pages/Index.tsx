@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import RaritySection from "@/components/RaritySection";
+import EngineeringSection from "@/components/EngineeringSection";
+import CtaSection from "@/components/CtaSection";
+import Footer from "@/components/Footer";
+import WaitlistDialog from "@/components/WaitlistDialog";
 
 const Index = () => {
+  const [waitlistOpen, setWaitlistOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header onOpenWaitlist={() => setWaitlistOpen(true)} />
+      <HeroSection />
+      <RaritySection />
+      <EngineeringSection />
+      <CtaSection onOpenWaitlist={() => setWaitlistOpen(true)} />
+      <Footer />
+      <WaitlistDialog open={waitlistOpen} onOpenChange={setWaitlistOpen} />
     </div>
   );
 };
